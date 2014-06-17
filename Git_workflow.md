@@ -13,13 +13,12 @@ First branch off a new feature branch from the *development* branch:
 ```
 $ git checkout -b newfeature development
 ```
-
-When you're finished, merge it into *development* branch, and delete the feature branch:
+Do your work and commit the changes. When you're finished, merge it into *development* branch, and delete the feature branch:
 
 ```
 $ git checkout development
-$ git merge --no-off newfeature
-$ git brach -d new feature
+$ git merge --no-ff newfeature
+$ git branch -d new feature
 $ git push origin development
 ```
 
